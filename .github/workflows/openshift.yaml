@@ -23,5 +23,13 @@ jobs:
         username: balaji36490
         password: Balaji@280
         registry: docker.io
+    - name: ⬇️ Install OpenShift CLI (oc)
+      run: |
+        curl -LO https://mirror.openshift.com/pub/openshift-v4/clients/oc/latest/linux/oc.tar.gz
+        tar -xzf oc.tar.gz
+        sudo mv oc /usr/local/bin/
+        oc version
+
+    
  
        
